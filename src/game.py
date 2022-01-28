@@ -6,8 +6,13 @@
 class Game:
     def __init__(self, diff):
         self.diff = diff
-        print(diff)
+        self.moves = 0
+        self.enemy_board = generate_board()
+        self.player_board = generate_board()
 
     def play(self):
-        print("Game started")
+        pass
+
+    def generate_board():
+        return [10][10]
         
