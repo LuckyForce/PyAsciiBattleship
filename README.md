@@ -3,4 +3,4 @@ This is an Python Console App where you can play Battleship shown with Ascii Cha
 ## This Repository is in progress and not yet playable.
 
 ## How to run this programme.
-`python PyAsciiBattleship.py`
+`>>> python PyAsciiBattleship.py`
