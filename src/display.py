@@ -4,6 +4,7 @@
 # Description: This file handles the output of the game.
 
 def welcome_message():
+    "This function gives out the welcome message."
     print("--------------------------------------")
     print("Welcome to the Battleship game!")
     print("This game is going to be against an AI enemy.")
@@ -15,6 +16,7 @@ def welcome_message():
 
 
 def goodbye_message():
+    "This function gives out the goodbye message."
     print("--------------------------------------")
     print("This game was made by Adrian Schauer.")
     print("Thanks for playing!")
@@ -23,6 +25,7 @@ def goodbye_message():
 
 
 def game_selection():
+    "This function gives out the selection message of the game."
     print("--------------------------------------")
     print("Arrghh! I am the enemy!")
     print("I am going to guess your ships!")
@@ -33,6 +36,24 @@ def game_selection():
     print("Please choose the difficulty of the game:")
     print("Enter either 1, 2 or 3. Where 1 I am just going to guess and 2 where I will to destroy you till you quit the game. 3 is just for fun where I am going to cheat and you will have no fun loosing.")
 
+def game_setup():
+    "This function gives out the setup message of the game."
+    print("--------------------------------------")
+    print("Hey! Stop right there you can't just beat my AI without nothing!")
+    print("I am going to give you some ships!")
+    print("First of I am going to give you a gigantic aircraft carrier with the length of 5 cells.")
+    print("Then I am going to give you a battleship with the length of 4 cells.")
+    print("Then I am going to give you a submarine with the length of 3 cells.")
+    print("Then I am going to give you a destroyer with the length of 3 cells.")
+    print("Then I am going to give you a patrol boat with the length of 2 cells.")
+    print("Now you just have to place your ships on the board.")
+    print("--------------------------------------")
+
+def game_start():
+    "This function gives out the start of the game."
+    print("--------------------------------------")
+    print("Alright let's start the game!")
+    print("--------------------------------------")
 
 def game_state():
     "This function gives out the current state of the game."

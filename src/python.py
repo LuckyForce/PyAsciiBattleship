@@ -29,13 +29,21 @@ def start():
     game = Game(difficulty)
 
     print("-----FINISHED INITIALIZATION-----")
+    print("-----STARTING SETUP-----")
+
+    display.game_setup()
+
+    game.setup()
+
+    print("-----FINISHED SETUP-----")
     print("-----STARTING GAME-----")
+    
+    display.game_start()
 
     game.play()
     
     if(input("Do you wanna play the game again? (y/n)") == "y"):
         start()
-
 
 if __name__ == '__main__':
     Main()
