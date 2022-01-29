@@ -3,18 +3,18 @@
 #Author: Adrian Schauer
 #Description: This file contains the main function of the game.
 
-from PyAsciiBattleship.src.board import Board
+from PyAsciiBattleship.src.enemy import Enemy
+from PyAsciiBattleship.src.player import Player
 
 
 class Game:
     def __init__(self, diff):
         "This function initializes the game."
         self.diff = diff
-        self.moves = 0
         self.ended = False
-        self.enemy_board = Board()
-        self.player_board = Board()
-        self.player_board.print_board()
+        self.enemy = Enemy(diff)
+        self.player = Player()
+        self.player.board.print_board()
     
     def setup(self):
         "This function sets up the game."

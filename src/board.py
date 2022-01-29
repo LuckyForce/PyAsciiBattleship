@@ -13,14 +13,9 @@ class Board:
     def __init__(self):
         "This function initializes the board."
         self.board = [10 * ['.'] for i in range(10)]
-        self.ships = []
         self.ships_placed = 0
         self.ships_sunk = 0
-        self.ships.append(Ship(Ship.type.A))
-        self.ships.append(Ship(Ship.type.B))
-        self.ships.append(Ship(Ship.type.S))
-        self.ships.append(Ship(Ship.type.D))
-        self.ships.append(Ship(Ship.type.P))
+        self.ships = [Ship(Ship.type.A), Ship(Ship.type.B), Ship(Ship.type.S), Ship(Ship.type.D), Ship(Ship.type.P)]
     
     def print_board(self):
         "This function prints the board."

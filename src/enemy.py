@@ -3,10 +3,14 @@
 #Author: Adrian Schauer
 #Description: This file contains the algorithm of the enemy AI.
 
+from PyAsciiBattleship.src.board import Board
+
+
 class Enemy:
     def __init__(self, diff):
         self.misses = 0
-        self.diff = diff        
+        self.diff = diff
+        self.board = Board()
 
     def make_move():
         pass
