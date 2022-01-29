@@ -14,6 +14,7 @@ class Ship:
 
         self.type = type
         self.rotation = Ship.Rotation.H
+        self.placed = False
 
         #Assigns the variables for the correct type.
         if(type == Ship.type.A):
@@ -55,4 +56,12 @@ class Ship:
     
     def setRotation(self, rotation):
         "This function sets the rotation of the ship."
-        self.rotation = rotation    
+        self.rotation = rotation
+    
+    def isPlaced(self):
+        "This function returns if the ship is placed."
+        return self.placed
+    
+    def setPlaced(self, placed):
+        "This function sets the placed variable."
+        self.placed = placed
