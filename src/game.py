@@ -3,7 +3,7 @@
 #Author: Adrian Schauer
 #Description: This file contains the main function of the game.
 
-from board import Board
+from PyAsciiBattleship.src.board import Board
 
 
 class Game:
