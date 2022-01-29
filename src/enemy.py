@@ -5,7 +5,8 @@
 
 class Enemy:
     def __init__(self, diff):
-        pass
+        self.misses = 0
+        self.diff = diff        
 
     def make_move():
         pass
