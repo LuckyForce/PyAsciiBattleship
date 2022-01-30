@@ -35,7 +35,7 @@ class Board:
         print(' - - - - - - - - - - - - ')
         print(' - - A B C D E F G H I J - ')
         for i in range(10):
-            print(' - ' + str(i + 1) + ' ' + ' '.join(self.board[i]))
+            print(' - ' + str(i) + ' ' + ' '.join(self.board[i]))
         print(' - - - - - - - - - - - - ')
 
     def place_ship(self, ship, x, y, rotation):
