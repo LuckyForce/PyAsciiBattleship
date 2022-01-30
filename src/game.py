@@ -3,8 +3,8 @@
 #Author: Adrian Schauer
 #Description: This file contains the main function of the game.
 
-from PyAsciiBattleship.src.enemy import Enemy
-from PyAsciiBattleship.src.player import Player
+from enemy import Enemy
+from player import Player
 
 
 class Game:

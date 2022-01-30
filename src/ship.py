@@ -4,36 +4,35 @@
 #Description: This file contains the interface for the ships.
 
 import enum
+from shiprotation import ShipRotation
+from shiptype import ShipType
 
 class Ship:
-    enum.Rotation = enum.Enum('Rotation', 'H V')
-    enum.type = enum.Enum('symbol', 'A B S D P')
-
-    def __init__(self, type):
+    def __init__(self, shiptype):
         "This function initializes the ship."
 
-        self.type = type
-        self.rotation = Ship.Rotation.H
+        self.shiptype = shiptype
+        self.rotation = ShipRotation.Horizontal
         self.placed = False
 
         #Assigns the variables for the correct type.
-        if(type == Ship.type.A):
+        if(shiptype == ShipType.AircraftCarrier):
             self.name = "Aircraft Carrier"
             self.length = 5
             self.symbol = 'A'
-        elif(type == Ship.type.B):
+        elif(shiptype == ShipType.Battleship):
             self.name = "Battleship"
             self.length = 4
             self.symbol = 'B'
-        elif(type == Ship.type.S):
+        elif(shiptype == ShipType.Submarine):
             self.name = "Submarine"
             self.length = 3
             self.symbol = 'S'
-        elif(type == Ship.type.D):
+        elif(shiptype == ShipType.Destroyer):
             self.name = "Destroyer"
             self.length = 3
             self.symbol = 'D'
-        elif(type == Ship.type.P):
+        elif(shiptype == ShipType.PatrolBoat):
             self.name = "Patrol Boat"
             self.length = 2
             self.symbol = 'P'

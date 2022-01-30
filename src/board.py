@@ -6,7 +6,8 @@
 # X stands for a hit on the board.
 # O stands for a miss on the board.
 
-from PyAsciiBattleship.src.ship import Ship
+from shiptype import ShipType
+from ship import Ship
 
 
 class Board:
@@ -15,7 +16,7 @@ class Board:
         self.board = [10 * ['.'] for i in range(10)]
         self.ships_placed = 0
         self.ships_sunk = 0
-        self.ships = [Ship(Ship.type.A), Ship(Ship.type.B), Ship(Ship.type.S), Ship(Ship.type.D), Ship(Ship.type.P)]
+        self.ships = [Ship(ShipType.AircraftCarrier), Ship(ShipType.Battleship), Ship(ShipType.Submarine), Ship(ShipType.Destroyer), Ship(ShipType.PatrolBoat)]
     
     def print_board(self):
         "This function prints the board."

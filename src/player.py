@@ -3,9 +3,7 @@
 #Author: Adrian Schauer
 #Description: This file contains class for player
 
-from PyAsciiBattleship.src.board import Board
-from PyAsciiBattleship.src.ship import Ship
-
+from board import Board
 
 class Player:
     def __init__(self):

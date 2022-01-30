@@ -3,7 +3,7 @@
 #Author: Adrian Schauer
 #Description: This file contains the algorithm of the enemy AI.
 
-from PyAsciiBattleship.src.board import Board
+from board import Board
 
 
 class Enemy:
