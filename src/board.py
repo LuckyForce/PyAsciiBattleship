@@ -6,6 +6,7 @@
 # X stands for a hit on the board.
 # O stands for a miss on the board.
 
+from shiprotation import ShipRotation
 from shiptype import ShipType
 from ship import Ship
 
@@ -44,12 +45,19 @@ class Board:
         if self.check_ship_placement(ship, x, y, rotation):
             #place ship
             for i in range(ship.getLength()):
-                if rotation == Ship.Rotation.H:
+                if rotation == ShipRotation.Horizontal:
                     self.board[y][x + i] = ship.getSymbol()
+                    ship.setX(x + i)
+                    ship.setY(y)
                 else:
                     self.board[y + i][x] = ship.getSymbol()
+                    ship.setX(x)
+                    ship.setY(y + i)
             #increase number of ships placed
             self.ships_placed += 1
+            #set ship as placed
+            ship.setPlaced(True)
+
             return True
         else:
             return False
@@ -57,7 +65,7 @@ class Board:
     def check_ship_placement(self, ship, x, y, rotation):
         "This function checks if a ship can be placed."
         #check if ship can be placed
-        if rotation == Ship.Rotation.H:
+        if rotation == ShipRotation.Horizontal:
             if x + ship.getLength() > 10:
                 return False
             for i in range(ship.getLength()):

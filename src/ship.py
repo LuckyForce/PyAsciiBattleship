@@ -14,6 +14,8 @@ class Ship:
         self.shiptype = shiptype
         self.rotation = ShipRotation.Horizontal
         self.placed = False
+        self.x = 0
+        self.y = 0
 
         #Assigns the variables for the correct type.
         if(shiptype == ShipType.AircraftCarrier):
@@ -64,3 +66,19 @@ class Ship:
     def setPlaced(self, placed):
         "This function sets the placed variable."
         self.placed = placed
+
+    def getX(self):
+        "This function returns the X coordinate of the ship."
+        return self.x
+    
+    def setX(self, x):
+        "This function sets the X coordinate of the ship."
+        self.x = x
+    
+    def getY(self):
+        "This function returns the Y coordinate of the ship."
+        return self.y
+    
+    def setY(self, y):
+        "This function sets the Y coordinate of the ship."
+        self.y = y
