@@ -77,3 +77,9 @@ def player_move():
     print("--------------------------------------")
     print("Your turn!")
     print("--------------------------------------")
+
+def move_invalid():
+    "This function gives out the invalid move message."
+    print("--------------------------------------")
+    print("Invalid move!")
+    print("--------------------------------------")
