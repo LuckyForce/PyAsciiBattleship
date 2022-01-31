@@ -15,6 +15,7 @@ class Board:
     def __init__(self):
         "This function initializes the board."
         self.board = [10 * ['.'] for i in range(10)]
+        self.ship_board = [10 * ['.'] for i in range(10)]
         self.ships_placed = 0
         self.ships_sunk = 0
         self.ships = [Ship(ShipType.AircraftCarrier), Ship(ShipType.Battleship), Ship(ShipType.Submarine), Ship(ShipType.Destroyer), Ship(ShipType.PatrolBoat)]
@@ -46,11 +47,11 @@ class Board:
             #place ship
             for i in range(ship.getLength()):
                 if rotation == ShipRotation.Horizontal:
-                    self.board[y][x + i] = ship.getSymbol()
+                    self.ship_board[y][x + i] = ship.getSymbol()
                     ship.setX(x + i)
                     ship.setY(y)
                 else:
-                    self.board[y + i][x] = ship.getSymbol()
+                    self.ship_board[y + i][x] = ship.getSymbol()
                     ship.setX(x)
                     ship.setY(y + i)
             #increase number of ships placed
@@ -69,12 +70,17 @@ class Board:
             if x + ship.getLength() > 10:
                 return False
             for i in range(ship.getLength()):
-                if self.board[y][x + i] != '.':
+                if self.ship_board[y][x + i] != '.':
                     return False
         else:
             if y + ship.getLength() > 10:
                 return False
             for i in range(ship.getLength()):
-                if self.board[y + i][x] != '.':
+                if self.ship_board[y + i][x] != '.':
                     return False
         return True
+
+    def set_hit(self, x, y):
+        "This function sets a hit on the board."
+        #set hit
+        
