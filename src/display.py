@@ -83,3 +83,9 @@ def move_invalid():
     print("--------------------------------------")
     print("Invalid move!")
     print("--------------------------------------")
+
+def move_already_made():
+    "This function gives out the already made move message."
+    print("--------------------------------------")
+    print("You already made a move here!")
+    print("--------------------------------------")

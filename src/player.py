@@ -33,6 +33,6 @@ class Player:
         if self.board.field_valid(x, y) == False:
             display.move_invalid()
         elif self.board.field_empty(x, y) == True:
-            display.move_empty()
+            display.move_already_made()
         else:
             self.board.set_hit(x, y)
