@@ -8,5 +8,4 @@ from board import Board
 class Player:
     def __init__(self):
         self.moves = 0
-        self.ships = []
         self.board = Board()
