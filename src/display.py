@@ -48,6 +48,7 @@ def game_setup():
     print("Moreover I am going to give you a destroyer with the length of 3 cells.")
     print("Then lastly I am going to give you a patrol boat with the length of 2 cells.")
     print("Now you just have to place your ships on the board.")
+    print("If you want to play with more ships just add them to the list of ships. But remember you and the enemy will have the same amount of ships.")
     print("--------------------------------------")
 
 
@@ -55,11 +56,17 @@ def game_start():
     "This function gives out the start of the game."
     print("--------------------------------------")
     print("Alright let's start the game!")
+    print("Let's see what you got!")
+    print("Arrrghh!")
     print("--------------------------------------")
 
 
-def game_state():
+def game_state(game):
     "This function gives out the current state of the game."
+    print("--------------------------------------")
+    print("Difficulty:")
+    print(game.diff)
+    print("--------------------------------------")
 
 
 def game_info():

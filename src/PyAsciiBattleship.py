@@ -42,7 +42,7 @@ def start():
 
     game.play()
     
-    if(input("Do you wanna play the game again? (y/n)") == "y"):
+    if(input("Do you wanna play the game again? (y/n): ") == "y"):
         start()
 
 if __name__ == '__main__':

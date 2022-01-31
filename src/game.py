@@ -5,7 +5,7 @@
 
 from enemy import Enemy
 from player import Player
-
+import display
 
 class Game:
     def __init__(self, diff):
@@ -14,7 +14,6 @@ class Game:
         self.ended = False
         self.enemy = Enemy(diff)
         self.player = Player()
-        self.player.board.print_board()
     
     def setup(self):
         "This function sets up the game."
@@ -23,5 +22,6 @@ class Game:
     def play(self):
         "This function plays the game."
         while self.ended == False:
-            pass
+            display.game_state(self)
+            break
         
