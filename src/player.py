@@ -4,6 +4,7 @@
 #Description: This file contains class for player
 
 from board import Board
+import display
 
 class Player:
     def __init__(self):
