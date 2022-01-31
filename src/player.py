@@ -12,4 +12,19 @@ class Player:
 
     def make_move(self):
         self.moves += 1
+
+        #Display Player Move Text
+        display.player_move()
+
+        #Get field from user input.
+        field = input()
+
+        #Column is A-J, row is 1-10.
+        column = field.split('/')[0]
+        row = field.split('/')[1]
+
+        #Convert column and row to x and y coordinates.
+        x = ord(column) - 65
+        y = int(row) - 1
+
         self.board.set_hit(x, y)
