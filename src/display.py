@@ -71,3 +71,9 @@ def game_state(game):
 
 def game_info():
     "This function gives out the information of how to play the game."
+
+def player_move():
+    "This function gives out the player move message."
+    print("--------------------------------------")
+    print("Your turn!")
+    print("--------------------------------------")
