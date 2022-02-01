@@ -87,5 +87,8 @@ class Board:
     def move_invalid(self, x, y):
         "This function prints that a move is invalid."
         #print move invalid
-        
+    
+    def move_already_made(self):
+        "This function returns that a move has already been made."
+        #print move already made
         
