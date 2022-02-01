@@ -83,4 +83,9 @@ class Board:
     def set_hit(self, x, y):
         "This function sets a hit on the board."
         #set hit
+
+    def move_invalid(self, x, y):
+        "This function prints that a move is invalid."
+        #print move invalid
+        
         
