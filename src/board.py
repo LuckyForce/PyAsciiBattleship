@@ -88,7 +88,11 @@ class Board:
         "This function returns that a move is invalid."
         #return move invalid
     
-    def move_already_made(self):
+    def move_already_made(self, x, y):
         "This function returns that a move has already been made."
         #return move already made
+        if self.board[x][y] != '.':
+            return True
+        else:
+            return False
         
