@@ -87,6 +87,10 @@ class Board:
     def move_invalid(self, x, y):
         "This function returns that a move is invalid."
         #return move invalid
+        if(x>self.board.length or y>self.board.length or x<0 or y<0):
+            return True
+        else:
+            return False
     
     def move_already_made(self, x, y):
         "This function returns that a move has already been made."
