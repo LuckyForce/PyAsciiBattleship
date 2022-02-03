@@ -1,7 +1,7 @@
-#File Info:
-#Created: 2020-01-27
-#Author: Adrian Schauer
-#Description: This file contains the algorithm of the enemy AI.
+# File Info:
+# Created: 2020-01-27
+# Author: Adrian Schauer
+# Description: This file contains the algorithm of the enemy AI.
 
 import random
 from board import Board
@@ -27,8 +27,12 @@ class Enemy:
         pass
 
     def calculate_cheat_move(self):
-        # get random number between 0 and 9
-        x = random.randint(0, 9)
-        # get random number between 0 and 9
-        y = random.randint(0, 9)
+        while True:
+            # get random number between 0 and 9
+            x = random.randint(0, 9)
+            # get random number between 0 and 9
+            y = random.randint(0, 9)
+            # check if field has ship
+            if self.board.get_field(x, y) == '.':
+                return x, y
 
