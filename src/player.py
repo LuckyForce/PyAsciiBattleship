@@ -32,7 +32,7 @@ class Player:
         # Check if field is valid.
         if self.board.move_invalid(x, y) == False:
             display.move_invalid()
-        elif self.board.field_empty(x, y) == True:
+        elif self.board.move_already_made(x, y) == True:
             display.move_already_made()
         else:
             self.board.set_hit(x, y)
