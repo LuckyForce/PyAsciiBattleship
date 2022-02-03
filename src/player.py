@@ -13,6 +13,9 @@ class Player:
         self.misses = 0
         self.board = Board()
 
+    def generate_ship_placement(self):
+        pass
+
     def make_move(self):
         self.moves += 1
 
