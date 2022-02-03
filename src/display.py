@@ -95,3 +95,9 @@ def player_hit():
     print("--------------------------------------")
     print("You hit a ship!")
     print("--------------------------------------")
+
+def player_miss():
+    "This function gives out the player miss message."
+    print("--------------------------------------")
+    print("You missed!")
+    print("--------------------------------------")
