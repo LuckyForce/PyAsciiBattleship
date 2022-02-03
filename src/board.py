@@ -80,7 +80,7 @@ class Board:
                     return False
         return True
 
-    def set_hit(self, x, y):
+    def make_move(self, x, y):
         "This function sets a hit on the board."
         #set hit
 
