@@ -8,6 +8,7 @@ from board import Board
 
 class Enemy:
     def __init__(self, diff):
+        self.moves = 0
         self.misses = 0
         self.diff = diff
         self.board = Board()
