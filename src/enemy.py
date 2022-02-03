@@ -15,3 +15,6 @@ class Enemy:
     def make_move():
         pass
 
+    def calculate_best_move(self):
+        pass
+
