@@ -35,4 +35,4 @@ class Player:
         elif self.board.move_already_made(x, y) == True:
             display.move_already_made()
         else:
-            self.board.set_hit(x, y)
+            self.board.make_move(x, y)
