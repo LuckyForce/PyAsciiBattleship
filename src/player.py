@@ -36,4 +36,9 @@ class Player:
         elif self.board.move_already_made(x, y) == True:
             display.move_already_made()
         else:
-            self.board.make_move(x, y)
+            hit = self.board.make_move(x, y)
+            if hit == True:
+                display.player_hit()
+            else:
+                display.player_miss()
+                self.misses += 1
