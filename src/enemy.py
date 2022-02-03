@@ -13,6 +13,9 @@ class Enemy:
         self.diff = diff
         self.board = Board()
 
+    def generate_ship_placement(self):
+        pass
+
     def make_move():
         pass
 
