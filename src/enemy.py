@@ -18,3 +18,6 @@ class Enemy:
     def calculate_best_move(self):
         pass
 
+    def calculate_random_move(self):
+        pass
+
