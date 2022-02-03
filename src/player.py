@@ -10,6 +10,7 @@ import display
 class Player:
     def __init__(self):
         self.moves = 0
+        self.misses = 0
         self.board = Board()
 
     def make_move(self):
