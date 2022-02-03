@@ -30,7 +30,7 @@ class Player:
         y = int(row) - 1
 
         # Check if field is valid.
-        if self.board.field_valid(x, y) == False:
+        if self.board.move_invalid(x, y) == False:
             display.move_invalid()
         elif self.board.field_empty(x, y) == True:
             display.move_already_made()
