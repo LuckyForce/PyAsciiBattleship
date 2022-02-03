@@ -22,3 +22,6 @@ class Enemy:
     def calculate_random_move(self):
         pass
 
+    def calculate_cheat_move(self):
+        pass
+
