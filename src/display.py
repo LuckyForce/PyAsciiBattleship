@@ -89,3 +89,9 @@ def move_already_made():
     print("--------------------------------------")
     print("You already made a move here!")
     print("--------------------------------------")
+
+def player_hit():
+    "This function gives out the player hit message."
+    print("--------------------------------------")
+    print("You hit a ship!")
+    print("--------------------------------------")
