@@ -3,6 +3,7 @@
 #Author: Adrian Schauer
 #Description: This file contains the algorithm of the enemy AI.
 
+import random
 from board import Board
 
 
@@ -26,5 +27,8 @@ class Enemy:
         pass
 
     def calculate_cheat_move(self):
-        pass
+        # get random number between 0 and 9
+        x = random.randint(0, 9)
+        # get random number between 0 and 9
+        y = random.randint(0, 9)
 
