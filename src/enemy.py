@@ -20,8 +20,14 @@ class Enemy:
     def make_move():
         pass
 
-    def calculate_move():
-        pass
+    def calculate_move(self):
+        match self.diff:
+            case '1':
+                return self.calculate_random_move()
+            case '2':
+                return self.calculate_best_move()
+            case '3':
+                return self.calculate_cheat_move()
 
     def calculate_best_move(self):
         pass
