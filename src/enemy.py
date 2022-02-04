@@ -33,6 +33,6 @@ class Enemy:
             # get random number between 0 and 9
             y = random.randint(0, 9)
             # check if field has ship
-            if self.board.get_field(x, y) == '.':
+            if self.board.board[x][y] == '.' and self.board.ship_board[x][y] != '.':
                 return x, y
 
