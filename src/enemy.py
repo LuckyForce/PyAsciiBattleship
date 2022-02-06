@@ -33,7 +33,12 @@ class Enemy:
         pass
 
     def calculate_random_move(self):
-        pass
+        # get random number between 0 and 9
+        x = random.randint(0, 9)
+        # get random number between 0 and 9
+        y = random.randint(0, 9)
+        # return x, y
+        return x, y
 
     def calculate_cheat_move(self):
         while True:
