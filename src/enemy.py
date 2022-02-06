@@ -17,7 +17,7 @@ class Enemy:
     def generate_ship_placement(self):
         pass
 
-    def make_move():
+    def make_move(self):
         display.enemy_turn()
         x, y = calculate_move()
         self.moves += 1
