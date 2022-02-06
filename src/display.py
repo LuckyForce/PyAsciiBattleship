@@ -101,3 +101,9 @@ def player_miss():
     print("--------------------------------------")
     print("You missed!")
     print("--------------------------------------")
+
+def enemy_hit():
+    "This function gives out the enemy hit message."
+    print("--------------------------------------")
+    print("The enemy hit a ship!")
+    print("--------------------------------------")
