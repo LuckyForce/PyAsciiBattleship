@@ -20,6 +20,14 @@ class Board:
         self.ships_sunk = 0
         self.ships = [Ship(ShipType.AircraftCarrier), Ship(ShipType.Battleship), Ship(ShipType.Submarine), Ship(ShipType.Destroyer), Ship(ShipType.PatrolBoat)]
     
+    def check_win(self):
+        "This function checks if every ship got hit."
+        #check if every ship got hit
+        if self.ships_sunk == len(self.ships):
+            return True
+        else:
+            return False
+
     def print_board(self):
         "This function prints the board."
         #print board in following format:
