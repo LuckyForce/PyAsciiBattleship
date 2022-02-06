@@ -30,6 +30,8 @@ class Enemy:
                 return self.calculate_cheat_move()
 
     def calculate_best_move(self):
+        # Calculate the best move by looking at the board
+        # based on the current state of the game without looking at the ship_board
         pass
 
     def calculate_random_move(self):
