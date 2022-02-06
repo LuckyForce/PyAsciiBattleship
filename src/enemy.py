@@ -18,7 +18,15 @@ class Enemy:
         pass
 
     def make_move():
-        pass
+        display.enemy_turn()
+        x, y = calculate_move()
+        self.moves += 1
+        hit = self.board.make_move(x, y)
+        if hit == True:
+            display.enemy_hit()
+        else:
+            display.enemy_miss()
+            self.misses += 1
 
     def calculate_move(self):
         match self.diff:
