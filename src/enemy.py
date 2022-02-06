@@ -5,7 +5,7 @@
 
 import random
 from board import Board
-
+import display
 
 class Enemy:
     def __init__(self, diff):
