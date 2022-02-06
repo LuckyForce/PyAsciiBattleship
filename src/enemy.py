@@ -19,7 +19,7 @@ class Enemy:
 
     def make_move(self):
         display.enemy_turn()
-        x, y = calculate_move()
+        x, y = self.calculate_move()
         self.moves += 1
         hit = self.board.make_move(x, y)
         if hit == True:
