@@ -48,6 +48,26 @@ class Board:
             print(' - ' + str(i) + ' ' + ' '.join(self.board[i]))
         print(' - - - - - - - - - - - - ')
 
+    def print_ship_placements(self):
+        "This function prints the ship placements."
+        #print ship placements in following format:
+        # - - - - - - - - - - - -
+        # - - A B C D E F G H I J -
+        # - 1 X X X X X X X X X X -
+        # - 2 X X X X X X X X X X -
+        # - 3 X X X X X X X X X X -
+        # - 4 X X X X X X X X X X -
+        # - 5 X X X X X X X X X X -
+        # - 6 X X X X X X X X X X -
+        # - 7 X X X X X X X X X X -
+        # - 8 X X X X X X X X X X -
+        # - 9 X X X X X X X X X X -
+        print(' - - - - - - - - - - - - ')
+        print(' - - A B C D E F G H I J - ')
+        for i in range(10):
+            print(' - ' + str(i) + ' ' + ' '.join(self.ship_board[i]))
+        print(' - - - - - - - - - - - - ')
+
     def place_ship(self, ship, x, y, rotation):
         "This function places a ship on the board."
         #check if ship can be placed

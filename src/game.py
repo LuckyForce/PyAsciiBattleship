@@ -18,7 +18,7 @@ class Game:
     def setup(self):
         "This function sets up the game."
         print("Let's start with setting up the game!")
-        while Player.ships_left > 0:
+        while self.player.board.ships_placed != self.player.board.ships.__len__():
             self.player.place_ship()
             print("You have " + str(Player.ships_left) + " ships left to place.")
             self.player.board.print_ship_placements()
