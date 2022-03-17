@@ -17,7 +17,11 @@ class Game:
     
     def setup(self):
         "This function sets up the game."
-        pass
+        print("Let's start with setting up the game!")
+        while Player.ships_left > 0:
+            self.player.place_ship()
+            print("You have " + str(Player.ships_left) + " ships left to place.")
+            self.player.board.print_ship_placements()
 
     def play(self):
         "This function plays the game."

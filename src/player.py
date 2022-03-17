@@ -42,3 +42,20 @@ class Player:
             else:
                 display.player_miss()
                 self.misses += 1
+
+    def place_ship(self):
+        "This function places a ship on the board."
+        print("What ship do you want to place?")
+        print("1. Destroyer, 2. Submarine, 3. Cruiser, 4. Battleship, 5. Carrier")
+        print("Enter the number of the ship you want to place.")
+        ship = input()
+        print("Where do you want to place the ship?")
+        print("Enter the column and row of the field you want to place the ship.")
+        print("Example: A1")
+        field = input()
+        column = field.split('/')[0]
+        row = field.split('/')[1]
+        x = ord(column) - 65
+        y = int(row) - 1
+        self.board.place_ship(x, y, ship)
+        
