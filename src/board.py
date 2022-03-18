@@ -68,7 +68,7 @@ class Board:
             print(' - ' + str(i) + ' ' + ' '.join(self.ship_board[i]))
         print(' - - - - - - - - - - - - ')
 
-    def place_ship(self, ship, x, y, rotation):
+    def place_ship(self, ship, x, y, rotation=ShipRotation.Horizontal):
         "This function places a ship on the board."
         #check if ship can be placed
         if self.check_ship_placement(ship, x, y, rotation):
