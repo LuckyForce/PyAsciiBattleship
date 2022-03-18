@@ -53,8 +53,8 @@ class Player:
         print("Enter the column and row of the field you want to place the ship.")
         print("Example: A1")
         field = input()
-        column = field.split('/')[0]
-        row = field.split('/')[1]
+        column = field[0]
+        row = field[1]
         x = ord(column) - 65
         y = int(row) - 1
         self.board.place_ship(x, y, ship)
