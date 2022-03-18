@@ -52,10 +52,15 @@ class Player:
         print("Where do you want to place the ship?")
         print("Enter the column and row of the field you want to place the ship.")
         print("Example: A1")
-        field = input()
-        column = field[0]
-        row = field[1]
-        x = ord(column) - 65
-        y = int(row) - 1
-        self.board.place_ship(x, y, ship)
-        
+        while True:
+            field = input()
+            column = field[0]
+            row = field[1]
+            x = ord(column) - 65
+            y = int(row) - 1
+            success = self.board.place_ship(x, y, ship)
+            if success == True:
+                break
+            else:
+                print("Invalid field. Try again.")
+        print("Ship placed.")        
