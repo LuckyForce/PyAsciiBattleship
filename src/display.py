@@ -72,11 +72,13 @@ def game_state(game):
 def game_info():
     "This function gives out the information of how to play the game."
 
+
 def player_move():
     "This function gives out the player move message."
     print("--------------------------------------")
     print("Your turn!")
     print("--------------------------------------")
+
 
 def move_invalid():
     "This function gives out the invalid move message."
@@ -84,11 +86,13 @@ def move_invalid():
     print("Invalid move!")
     print("--------------------------------------")
 
+
 def move_already_made():
     "This function gives out the already made move message."
     print("--------------------------------------")
     print("You already made a move here!")
     print("--------------------------------------")
+
 
 def player_hit():
     "This function gives out the player hit message."
@@ -96,11 +100,13 @@ def player_hit():
     print("You hit a ship!")
     print("--------------------------------------")
 
+
 def player_miss():
     "This function gives out the player miss message."
     print("--------------------------------------")
     print("You missed!")
     print("--------------------------------------")
+
 
 def enemy_hit():
     "This function gives out the enemy hit message."
@@ -108,8 +114,23 @@ def enemy_hit():
     print("The enemy hit a ship!")
     print("--------------------------------------")
 
+
 def enemy_miss():
     "This function gives out the enemy miss message."
     print("--------------------------------------")
     print("The enemy missed!")
     print("--------------------------------------")
+
+
+def player_ship_selection():
+    "This function gives out the player ship selection message."
+    print("What ship do you want to place?")
+    print("1. Destroyer, 2. Submarine, 3. Cruiser, 4. Battleship, 5. Carrier")
+    print("Enter the number of the ship you want to place.")
+
+
+def player_ship_placement():
+    "This function gives out the player ship placement message."
+    print("Where do you want to place the ship?")
+    print("Enter the column and row of the field you want to place the ship.")
+    print("Example: A1")
