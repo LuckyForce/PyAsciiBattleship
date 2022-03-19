@@ -45,13 +45,12 @@ class Player:
 
     def place_ship(self):
         "This function places a ship on the board."
-        print("What ship do you want to place?")
-        print("1. Destroyer, 2. Submarine, 3. Cruiser, 4. Battleship, 5. Carrier")
-        print("Enter the number of the ship you want to place.")
+        # Display Player Ship Selection Text
+        display.player_ship_selection()
+        # Get ship from user input.
         ship = input()
-        print("Where do you want to place the ship?")
-        print("Enter the column and row of the field you want to place the ship.")
-        print("Example: A1")
+        # Display Player Ship Placement Text
+        display.player_ship_placement()
         while True:
             field = input()
             column = field[0]
@@ -63,4 +62,4 @@ class Player:
                 break
             else:
                 print("Invalid field. Try again.")
-        print("Ship placed.")        
+        print("Ship placed.")
